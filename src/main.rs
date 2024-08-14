@@ -1,10 +1,10 @@
-mod s1768;
+mod s1071;
 
-use s1768::Solution;
+use s1071::Solution;
 
 fn main() {
     println!(
         "{}",
-        Solution::merge_alternately("abc".to_string(), "pqrst".to_string())
+        Solution::gcd_of_strings(String::from("ABCABCABC"), String::from("ABC"))
     );
 }
