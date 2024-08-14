@@ -1,9 +1,10 @@
-mod s0283;
+mod s0392;
 
-use s0283::Solution;
+use s0392::Solution;
 
 fn main() {
-    let mut nums = vec![1, 0];
-    Solution::move_zeroes(&mut nums);
-    println!("{:?}", nums);
+    print!(
+        "{}",
+        Solution::is_subsequence(String::from("ace"), String::from("abcde"))
+    )
 }
