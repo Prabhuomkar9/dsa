@@ -1,10 +1,12 @@
-mod s1071;
+mod s1431;
 
-use s1071::Solution;
+use s1431::Solution;
 
 fn main() {
-    println!(
-        "{}",
-        Solution::gcd_of_strings(String::from("ABCABCABC"), String::from("ABC"))
-    );
+    for i in Solution::kids_with_candies(vec![2, 3, 5, 1, 3], 3)
+        .iter()
+        .cloned()
+    {
+        println!("{}", i);
+    }
 }
