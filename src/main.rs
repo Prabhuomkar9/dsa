@@ -1,7 +1,9 @@
-mod s0605;
+mod s0283;
 
-use s0605::Solution;
+use s0283::Solution;
 
 fn main() {
-    println!("{}", Solution::reverse_vowels(String::from("hello")))
+    let mut nums = vec![1, 0];
+    Solution::move_zeroes(&mut nums);
+    println!("{:?}", nums);
 }
