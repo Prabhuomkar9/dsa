@@ -1,12 +1,7 @@
-mod s1431;
+mod s0605;
 
-use s1431::Solution;
+use s0605::Solution;
 
 fn main() {
-    for i in Solution::kids_with_candies(vec![2, 3, 5, 1, 3], 3)
-        .iter()
-        .cloned()
-    {
-        println!("{}", i);
-    }
+    println!("{}", Solution::reverse_vowels(String::from("hello")))
 }
